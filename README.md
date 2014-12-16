@@ -50,7 +50,11 @@ Description of the steps of the run_analytis.R script:
 
 5. Rename columns to avoid "strange names", replacing "..." by "."
 
-6. Save the result into the "result.csv" file into "data" directory
+6. Save the result into the "result.txt" file into "data" directory
+
+### Step 5
+
+The solution of the step 5 is commented in the file, the steps followings are these:
 
 7. Uses descriptive activity names to name the activities in the data set, through the "activity_labels.txt" file
 
@@ -58,5 +62,5 @@ Description of the steps of the run_analytis.R script:
 
 9. Remove columns about the activity id
 
-10. Save the result into the "meanData.csv" into "data" directory
+10. Save the result into the "meanData.txt" into "data" directory
 

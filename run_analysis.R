@@ -48,17 +48,18 @@ names(finalData) <- gsub("...", ".", names(finalData),fixed=TRUE)
 # save the final data
 write.table(finalData, './data/result.txt', row.names=FALSE )
 
-# Uses descriptive activity names to name the activities in the data set
-activityData <- read.table("./data/UCI HAR Dataset/activity_labels.txt")
-
-# Here are de final data with activity names
-finalData$activity <- as.character(factor(finalData$activity, levels=activityData$V1, labels=activityData$V2))
-
-# Calculate means
-meanData <- aggregate(x=finalData, by=list(activity=finalData$activity, id=finalData$id), FUN=mean)
-
-# eliminate duplicated columns activity (code) and id
-meanData <- meanData[ -c(3:4) ]
-
-# save the final data
-write.table(meanData, './data/meanData.txt' ,row.names=FALSE )
+# The next code is from obtain the file of the step 5
+## Uses descriptive activity names to name the activities in the data set
+#activityData <- read.table("./data/UCI HAR Dataset/activity_labels.txt")
+#
+## Here are de final data with activity names
+#finalData$activity <- as.character(factor(finalData$activity, levels=activityData$V1, labels=activityData$V2))
+#
+## Calculate means
+#meanData <- aggregate(x=finalData, by=list(activity=finalData$activity, id=finalData$id), FUN=mean)
+#
+## eliminate duplicated columns activity (the code) and id
+#meanData <- meanData[ -c(3:4) ]
+#
+## save the final data
+#write.table(meanData, './data/meanData.txt' ,row.names=FALSE )

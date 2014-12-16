@@ -57,7 +57,7 @@ finalData$activity <- as.character(factor(finalData$activity, levels=activityDat
 # Calculate means
 meanData <- aggregate(x=finalData, by=list(activity=finalData$activity, id=finalData$id), FUN=mean)
 
-# eliminate duplicated columns activity (the code) and id
+# eliminate duplicated columns activity (code) and id
 meanData <- meanData[ -c(3:4) ]
 
 # save the final data

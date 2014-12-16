@@ -45,6 +45,9 @@ finalData <- allData[,c(1,2,grep("std", colnames(allData)), grep("mean", colname
 # replace ... for . in columns names
 names(finalData) <- gsub("...", ".", names(finalData),fixed=TRUE)
 
+# save the final data
+write.csv(finalData, './data/result.csv')
+
 # Uses descriptive activity names to name the activities in the data set
 activityData <- read.table("./data/UCI HAR Dataset/activity_labels.txt")
 
@@ -58,4 +61,4 @@ meanData <- aggregate(x=finalData, by=list(activity=finalData$activity, id=final
 meanData <- meanData[ -c(3:4) ]
 
 # save the final data
-write.table(meanData, './data/merged.txt')
+write.csv(meanData, './data/meanData.csv')

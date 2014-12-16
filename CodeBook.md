@@ -66,7 +66,8 @@ The following files are available for the train and test data. Their description
 The mean and stardard deviation data are stored into the "result.txt" file, with 10.299 rows and 81 columns
 In the "meanData.txt" file, with 180 rows and 81 columns, the mean data of the data from the "result.csv" are stored.
 The strcuture of both file is the same, but in the fisrt file the "activity" field store a numeric identficiator, and in the second file, it store the description of the activity
-The strucuture is the following:
+
+The structure is the following:
 
 | Variable | Description
 -----------|-------------

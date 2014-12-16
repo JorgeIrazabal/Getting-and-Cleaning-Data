@@ -53,7 +53,10 @@ Description of the steps of the run_analytis.R script:
 6. Save the result into the "result.csv" file in the "data" directory
 
 7. Uses descriptive activity names to name the activities in the data set, through the "activity_labels.txt" file
+
 8. Calculate means data by activity and id
+
 9. Remove columns about the activity id
+
 10. Save the result into the "meanData.csv" into "data" directory
 

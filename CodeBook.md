@@ -23,11 +23,7 @@ Description of the steps of the run_analytis.R script:
 3. Merge three data frames into an unique data set
 4. Clean the data to obtain only the mean and standard deviation columns
 5. Rename columns to avoid "strange names", replacing "..." by "."
-6. Save the result into the "result.csv" file in the "data" directory
-7. Uses descriptive activity names to name the activities in the data set, through the "activity_labels.txt" file
-8. Calculate means data by activity and id
-9. Remove columns about the activity id
-10. Save the result into the "meanData.csv" into "data" directory
+6. Save the result into the "result.txt" file in the "data" directory
 
 ## Study design
 
@@ -64,8 +60,6 @@ The following files are available for the train and test data. Their description
 ## Code book
 ### Mean and stardard deviation data
 The mean and stardard deviation data are stored into the "result.txt" file, with 10.299 rows and 81 columns
-In the "meanData.txt" file, with 180 rows and 81 columns, the mean data of the data from the "result.csv" are stored.
-The strcuture of both file is the same, but in the fisrt file the "activity" field store a numeric identficiator, and in the second file, it store the description of the activity
 
 The structure is the following:
 

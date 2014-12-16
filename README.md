@@ -50,7 +50,7 @@ Description of the steps of the run_analytis.R script:
 
 5. Rename columns to avoid "strange names", replacing "..." by "."
 
-6. Save the result into the "result.csv" file in the "data" directory
+6. Save the result into the "result.csv" file into "data" directory
 
 7. Uses descriptive activity names to name the activities in the data set, through the "activity_labels.txt" file
 

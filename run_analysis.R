@@ -16,7 +16,7 @@ if (!file.exists("data")) {
         download.file(fileUrl,destfile="./data/proyectDataset.zip")        
         # Unzip the data
         print("Unziping data")
-        unzip("./data/proyectDataset.zip", exdir="data")
+        unzip("./data/pLoad royectDataset.zip", exdir="data")
         # remove the zip file
         file.remove("./data/proyectDataset.zip")
 
@@ -46,7 +46,7 @@ finalData <- allData[,c(1,2,grep("std", colnames(allData)), grep("mean", colname
 names(finalData) <- gsub("...", ".", names(finalData),fixed=TRUE)
 
 # save the final data
-write.csv(finalData, './data/result.csv')
+write.table(finalData, './data/result.txt', row.names=FALSE )
 
 # Uses descriptive activity names to name the activities in the data set
 activityData <- read.table("./data/UCI HAR Dataset/activity_labels.txt")
@@ -61,4 +61,4 @@ meanData <- aggregate(x=finalData, by=list(activity=finalData$activity, id=final
 meanData <- meanData[ -c(3:4) ]
 
 # save the final data
-write.csv(meanData, './data/meanData.csv')
+write.table(meanData, './data/meanData.txt' ,row.names=FALSE )

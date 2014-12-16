@@ -52,9 +52,9 @@ Description of the steps of the run_analytis.R script:
 
 6. Save the result into the "result.txt" file into "data" directory
 
-### Step 5
+##### Step 5
 
-The solution of the step 5 is commented in the file, the steps followings are these:
+The solution of the step 5 is commented in this file, the steps followings are these:
 
 7. Uses descriptive activity names to name the activities in the data set, through the "activity_labels.txt" file
 
